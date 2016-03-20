@@ -20,7 +20,6 @@ public class Msg {
     {
         return this.content;
     }
-
     public int getType()
     {
         return this.type;
