@@ -16,6 +16,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".MsgListView"></activity>
+        <receiver android:name=".MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.example.broadcasttest.MY_BROADCAST"></action>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>
