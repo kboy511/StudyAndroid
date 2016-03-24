@@ -11,6 +11,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+
+//如果在调试的时候发现模拟器中的程序一直是旧的，可以先把模拟器中的APP删除，这个时候重新运行会自动安装最新的。
 public class MainActivity extends AppCompatActivity {
 
     private Button btnMsgListView;
@@ -18,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     private IntentFilter intentFilter;
     private LocalBroadcastReceiver localBroadcastReceiver;
     private LocalBroadcastManager localBroadcastManager;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +48,20 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnSendLocalBroadcast=(Button)findViewById(R.id.btnSendLocalBroadcast);
         btnSendLocalBroadcast.setOnClickListener(new MyClickListener());
+
+        Button btnOpenFileOper=(Button)findViewById(R.id.btnOpenFileOper);
+        btnOpenFileOper.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,FileOper.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
+
+
 
     @Override
     protected void onDestroy() {
