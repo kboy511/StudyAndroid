@@ -23,7 +23,8 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".FileOper"></activity>
+        <activity android:name=".FileOper" />
+        <activity android:name=".SQLiteOper"></activity>
     </application>
 
 </manifest>

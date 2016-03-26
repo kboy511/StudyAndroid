@@ -58,6 +58,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button btnOperSQLiteOper = (Button)findViewById(R.id.btnOpenSQLiteOper);
+        btnOperSQLiteOper.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,SQLiteOper.class);
+                startActivity(intent);
+            }
+        });
     }
 
 

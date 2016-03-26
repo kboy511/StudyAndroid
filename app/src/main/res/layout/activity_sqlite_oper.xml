@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.zengyuping.studyandroid.SQLiteOper">
+
+    <Button
+        android:id="@+id/btnCreateDB"
+        android:text="创建数据库"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <Button
+            android:id="@+id/btnAddData"
+            android:text="添加数据"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnUpdateData"
+            android:text="更新数据"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnDelData"
+            android:text="删除数据"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnQueryData"
+            android:text="@string/query_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    <!--</LinearLayout>-->
+
+</LinearLayout>

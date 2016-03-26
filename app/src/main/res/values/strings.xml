@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">StudyAndroid</string>
+    <string name="query_Name">查询数据</string>
 </resources>
