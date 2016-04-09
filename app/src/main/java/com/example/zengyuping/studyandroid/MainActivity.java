@@ -66,6 +66,24 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button btnContacts = (Button)findViewById(R.id.btnContacts);
+        btnContacts.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,ContactsOfContentProvider.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnNotification = (Button)findViewById(R.id.btnNotification);
+        btnNotification.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,Notification.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
