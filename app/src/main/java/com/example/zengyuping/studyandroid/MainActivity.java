@@ -84,6 +84,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button btnCamera = (Button)findViewById(R.id.btnCamera);
+        btnCamera.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this,CameraTest.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
